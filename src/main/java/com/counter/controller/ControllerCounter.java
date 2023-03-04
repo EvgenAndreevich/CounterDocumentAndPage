@@ -21,13 +21,13 @@ public class ControllerCounter {
 
     @PostMapping("get-quantity-pages")
     public ResponseEntity<PageDto> getQuantityPages(@RequestBody PathDto pathToRootFolder) {
-        log.info("Get /counter/get-quantity-pages");
+        log.info("Post /counter/get-quantity-pages");
         return ResponseEntity.ok(new PageDto(serviceCounter.getQuantityPages(pathToRootFolder.getPath())));
     }
 
     @PostMapping("get-quantity-documents")
     public ResponseEntity<DocumentDto> getQuantityDocuments(@RequestBody PathDto pathToRootFolder) {
-        log.info("Get /counter/get-quantity-documents");
+        log.info("Post /counter/get-quantity-documents");
         return ResponseEntity.ok(new DocumentDto(serviceCounter.getQuantityDocuments(pathToRootFolder.getPath())));
     }
 }
