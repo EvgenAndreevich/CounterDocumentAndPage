@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "37e20f86-96e3-4117-89af-cfd47457181d",
+		"name": "CounterFileAndPage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21436422"
+	},
+	"item": [
+		{
+			"name": "GetQuantityDocuments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"path\": \"C:/Users/79991/Pictures/Camera Roll/AnyDesk/test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/counter/get-quantity-documents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"counter",
+						"get-quantity-documents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetQuantityPages",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"path\": \"C:/Users/79991/Pictures/Camera Roll/AnyDesk/test/test2/testic\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/counter/get-quantity-pages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"counter",
+						"get-quantity-pages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
